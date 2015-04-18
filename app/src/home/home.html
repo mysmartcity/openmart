@@ -8,9 +8,11 @@
 
     <h2>Galerie:</h2>
 
+    <input ng-model="query">
+
     <div class="row">
-        <div class="col-xs-6 col-md-3" ng-repeat="art in artwork">
-            <a href="#" class="thumbnail">
+        <div class="col-xs-6 col-md-4" ng-repeat="art in artwork | filter:query">
+            <a href="#/artwork/{{ art.id }}" class="thumbnail">
                 <img src="style/images/artwork/default.jpg" alt="artwork">
                 <div class="caption">
                     <h3>{{ art.name }}</h3>

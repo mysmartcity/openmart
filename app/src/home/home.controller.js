@@ -5,8 +5,8 @@
     var HomeCtrl = function($scope, SheetData, DataConverter) {
         SheetData.getData()
             .success(function(data) {
-                console.log(data);
-                $scope.artwork = DataConverter.processGSheets(data);
+                var csv = Papa.parse(data);
+                $scope.artwork = DataConverter.processCSV(csv);
             })
             .error(function() {
                 console.log("error");

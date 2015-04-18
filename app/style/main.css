@@ -3,3 +3,7 @@
     margin: 20px;
     text-align: center;
 }
+
+.thumbnail {
+    height: 320px;
+}

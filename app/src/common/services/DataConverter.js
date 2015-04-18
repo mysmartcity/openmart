@@ -6,22 +6,30 @@
         .factory("DataConverter", [
             function() {
                 return {
-                    processGSheets: function(data) {
-                        var result = [],
-                            content = "";
-
-                        var rows = data.feed.entry;
-
-                        for (var i = 0 ; i < rows.length; i++) {
-                            content = rows[i].content["$t"].split(":");
-
+                    processCSV: function(csv) {
+                        var data = csv.data;
+                        var result = [];
+                        for (var i = 1; i < data.length; i++) {
                             result.push({
-                                author: rows[i].title["$t"],
-                                name: content[1]
-                            })
+                                id: data[i][0],
+                                name: data[i][3],
+                                author: data[i][1]
+                            });
                         }
-
                         return result;
+                    },
+                    getID: function(csv, id) {
+                        var data = csv.data;
+                        var result = [];
+                        for (var i = 1; i < data.length; i++) {
+                            if (data[i][0] === id)
+                            return {
+                                id: data[i][0],
+                                name: data[i][3],
+                                author: data[i][1]
+                            };
+                        }
+                        return null;
                     }
                 }
             }
