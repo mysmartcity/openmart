@@ -2,7 +2,10 @@
 (function() {
     'use strict';
 
-    var openmart = angular.module("openmart", ["ngRoute"]);
+    var openmart = angular.module("openmart", [
+        "ngRoute",
+        "services.SheetData"
+    ]);
 
     openmart.config(['$routeProvider',
         function($routeProvider) {
