@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>OpenMArT</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
 </head>
-<body>
-<h1>Open MArT</h1>
+<body ng-app="openmart">
+
+<div class="container" ng-view></div>
+
+<div class="footer">
+    <hr/>
+    <p>Copyright &copy;
+        <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License.</a>
+    </p>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+
+<script src="src/openmart.js"></script>
+<script src="src/home/home.controller.js"></script>
+<script src="src/artwork/art.controller.js"></script>
+
 </body>
 </html>
