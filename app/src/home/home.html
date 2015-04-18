@@ -1,6 +1,23 @@
-<div class="jumbotron" style="margin-top: 30px;">
-    <img src="style/images/muzeu_de_arta_timisoara.jpg" alt="MArT" class="img-responsive"/>
-    <h1>Muzeul de artă Timișoara</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque blanditiis dolorem ducimus, esse ex libero molestiae nemo nobis porro praesentium provident ratione reprehenderit, saepe vitae voluptas. Cumque, officia!</p>
-    <p><a class="btn btn-primary btn-lg" href="" role="button">Learn more</a></p>
+<div>
+    <div class="jumbotron" style="margin-top: 30px;">
+        <img src="style/images/muzeu_de_arta_timisoara.jpg" alt="MArT" class="img-responsive"/>
+        <h1>Muzeul de artă Timișoara</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque blanditiis dolorem ducimus, esse ex libero molestiae nemo nobis porro praesentium provident ratione reprehenderit, saepe vitae voluptas. Cumque, officia!</p>
+        <p><a class="btn btn-primary btn-lg" href="" role="button">Learn more</a></p>
+    </div>
+
+    <h2>Galerie:</h2>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-3" ng-repeat="art in artwork">
+            <a href="#" class="thumbnail">
+                <img src="style/images/artwork/default.jpg" alt="artwork">
+                <div class="caption">
+                    <h3>{{ art.name }}</h3>
+                    <p>{{ art.author }}</p>
+                </div>
+            </a>
+        </div>
+        ...
+    </div>
 </div>
