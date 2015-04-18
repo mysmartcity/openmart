@@ -6,9 +6,12 @@
         <p><a class="btn btn-primary btn-lg" href="" role="button">Learn more</a></p>
     </div>
 
-    <h2>Galerie:</h2>
+    <div class="pull-right">
+        <input ng-model="query" class="form-control" style="max-width: 300px">
+    </div>
 
-    <input ng-model="query">
+    <h1>Galerie:</h1>
+
 
     <div class="row">
         <div class="col-xs-6 col-md-4" ng-repeat="art in artwork | filter:query">
