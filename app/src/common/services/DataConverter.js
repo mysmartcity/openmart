@@ -26,7 +26,11 @@
                             return {
                                 id: data[i][0],
                                 name: data[i][3],
-                                author: data[i][1]
+                                author: data[i][1],
+                                technique: data[i][4],
+                                details: data[i][2],
+                                size: data[i][5],
+                                description: data[i][6]
                             };
                         }
                         return null;
