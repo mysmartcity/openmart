@@ -7,3 +7,23 @@
 .thumbnail {
     height: 420px;
 }
+
+.header1 {
+    position: relative;
+    margin-bottom: 20px;
+}
+.navbar {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+}
+.navbar li {
+    list-style: none;
+    display: inline;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Oxygen', sans-serif;
+}
+.navbar a {
+    color: black;
+}
