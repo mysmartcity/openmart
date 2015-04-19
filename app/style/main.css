@@ -1,7 +1,11 @@
 
 .footer {
-    margin: 20px;
+    /*margin: 20px;*/
     text-align: center;
+    background-color: #111;
+    color: #eee;
+    padding: 20px 0 70px 0;
+    margin-top: 100px;
 }
 
 .thumbnail {
@@ -14,8 +18,8 @@
 }
 .navbar {
     position: absolute;
-    right: 90px;
-    top: 115px;
+    right: 10%;
+    top: 40%;
 }
 .navbar li {
     list-style: none;
@@ -38,4 +42,19 @@
 .icon1 {
     display: inline;
     width: 75px;
+}
+
+.artwork-description {
+    text-align: justify;
+}
+
+.artwork-picture {
+    width: 100%;
+    margin: 50px 0 0 0;
+    padding-left: 70px;
+}
+
+.artwork-text1 {
+    margin: 0 0 50px 70px;
+    font-size: 20px;
 }

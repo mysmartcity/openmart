@@ -2,15 +2,10 @@
 <navbar></navbar>
 
 <div>
-    <div>
-        <img src="style/images/Design-03.png" alt="icon" class="icon1"/>
-        <h1 class="title">Galerie:</h1>
-    </div>
-
     <div class="row">
         <div class="col-xs-6 col-md-4" ng-repeat="art in artwork | filter:query">
             <a href="#/artwork/{{ art.id }}" class="thumbnail">
-                <img src="style/images/artwork/thumb/{{ art.id }}.JPG" alt="thumb" onError="this.src='style/images/artwork/thumb/default.jpg'">
+                <img src="style/images/artwork/thumb/{{ art.id }}.JPG" alt="thumb" onError="this.src='style/images/artwork/thumb/default.png'">
                 <div class="caption">
                     <h3>{{ art.name }}</h3>
                     <p>{{ art.author }}</p>
