@@ -5,7 +5,8 @@
     var openmart = angular.module("openmart", [
         "ngRoute",
         "services.SheetData",
-        "services.DataConverter"
+        "services.DataConverter",
+        "directives.navbar"
     ]);
 
     openmart.config(['$routeProvider',
