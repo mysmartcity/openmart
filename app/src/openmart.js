@@ -15,6 +15,18 @@
                     templateUrl: 'src/home/home.html',
                     controller: 'HomeCtrl'
                 }).
+                when('/about', {
+                    templateUrl: 'src/about/about.html',
+                    controller: 'AboutCtrl'
+                }).
+                when('/contact', {
+                    templateUrl: 'src/contact/contact.html',
+                    controller: 'ContactCtrl'
+                }).
+                when('/gallery', {
+                    templateUrl: 'src/gallery/gallery.html',
+                    controller: 'GalleryCtrl'
+                }).
                 when('/artwork/:id', {
                     templateUrl: 'src/artwork/painting.html',
                     controller: 'ArtCtrl'

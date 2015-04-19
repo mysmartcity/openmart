@@ -14,16 +14,28 @@
 }
 .navbar {
     position: absolute;
-    right: 20px;
-    top: 100px;
+    right: 90px;
+    top: 115px;
 }
 .navbar li {
     list-style: none;
     display: inline;
-    font-size: 30px;
+    font-size: 20px;
     margin: 20px;
     font-family: 'Oxygen', sans-serif;
 }
 .navbar a {
     color: black;
+}
+
+.title {
+    font-family: 'Courgette', cursive;
+    display: inline;
+    position: relative;
+    top: 15px;
+}
+
+.icon1 {
+    display: inline;
+    width: 75px;
 }
