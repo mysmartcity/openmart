@@ -11,7 +11,29 @@
     <link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body ng-app="openmart">
+
+<div class="container">
+    <navbar ng-hide="atPage('/')"></navbar>
+</div>
+
+<div ng-show="atPage('/')">
+    <div class="header2">
+        <div class="container" style="padding-top: 100px;">
+            <img src="style/images/Design-07.png" alt="MArT" class="logo"/>
+
+            <div class="pull-right" style="margin-top: 100px;">
+                <ul class="navbar2">
+                    <li><a href="#/about">DESPRE</a></li>
+                    <li><a href="#/gallery">GALERIE</a></li>
+                    <li><a href="#/contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="black-band"></div>
+</div>
 
 <div class="container" ng-view></div>
 

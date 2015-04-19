@@ -23,26 +23,76 @@ a:hover.thumbnail  {
     position: relative;
     margin-bottom: 20px;
 }
+.header2 {
+    margin-bottom: 20px;
+    height: 500px;
+    background: url('images/Design-05.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+}
+
+.home-image {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -90px;
+    z-index: 100;
+}
+
+.homepage-description {
+    text-align: justify;
+    padding-top: 50px;
+}
+
+.logo {
+    width: 30%;
+    /*position: absolute;*/
+    /*top: 20%;*/
+}
+
+.black-band {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin-top: -20px;
+}
+
+.navbar2 {
+    /*position: absolute;*/
+    /*right: 20%;*/
+    /*top: 40%;*/
+    /*left: 5%*/
+}
+
 .navbar {
     position: absolute;
     right: 10%;
     top: 40%;
 }
-.navbar li {
+
+.navbar li,
+.navbar2 li {
     list-style: none;
     display: inline;
     font-size: 20px;
     margin: 20px;
     font-family: 'Oxygen', sans-serif;
+    z-indez: 1;
 }
 .navbar li .active {
     border-bottom: 4px solid #fcd27d;
 }
 
-.navbar a {
+
+.navbar a,
+.navbar2 a {
     color: black;
 }
-.navbar a:hover {
+.navbar a:hover,
+.navbar2 a:hover {
     text-decoration: none;
 }
 
