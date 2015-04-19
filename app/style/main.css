@@ -60,25 +60,56 @@ a:hover.thumbnail  {
     width: 75px;
 }
 
+.artwork-description {
+    text-align: justify;
+}
+
+.artwork-picture {
+    width: 100%;
+    margin: 50px 0 0 0;
+    padding-left: 70px;
+}
+
+.artwork-text1 {
+    margin: 0 0 50px 70px;
+    font-size: 20px;
+}
+
+.searchbox {
+    margin-top: -20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.searchbox input {
+    width: 39%;
+    background-color: #1a1a1a;
+    height: 45px;
+    color: #fcd27d;
+    font-size: 20px;
+    text-align: center;
+}
+
+
 .google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
-    }
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
 
 .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .contact-text {
-	font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .grey-font {
-	color: grey;
+    color: grey;
 }
