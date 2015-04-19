@@ -28,8 +28,15 @@
     margin: 20px;
     font-family: 'Oxygen', sans-serif;
 }
+.navbar li .active {
+    border-bottom: 4px solid #fcd27d;
+}
+
 .navbar a {
     color: black;
+}
+.navbar a:hover {
+    text-decoration: none;
 }
 
 .title {
