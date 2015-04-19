@@ -4,12 +4,19 @@
     text-align: center;
     background-color: #111;
     color: #eee;
-    padding: 20px 0 70px 0;
+    padding: 45px 0 45px 0;
     margin-top: 100px;
+}
+.footer a{
+    color:#fcd27d
 }
 
 .thumbnail {
     height: 420px;
+    border: none
+}
+a:hover.thumbnail  {
+    text-decoration: none;
 }
 
 .header1 {
@@ -40,10 +47,12 @@
 }
 
 .title {
-    font-family: 'Courgette', cursive;
+    font-family: 'Noto Serif', cursive;
     display: inline;
     position: relative;
     top: 15px;
+    letter-spacing: 2px;
+    font-size: 40px;
 }
 
 .icon1 {
@@ -64,4 +73,18 @@
 .artwork-text1 {
     margin: 0 0 50px 70px;
     font-size: 20px;
+}
+
+.searchbox {
+    margin-top: -20px;
+    width: 100%;
+}
+
+.searchbox input {
+    width: 39%;
+    background-color: #1a1a1a;
+    height: 45px;
+    color: #fcd27d;
+    font-size: 20px;
+    text-align: center;
 }
