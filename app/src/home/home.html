@@ -1,9 +1,13 @@
 <div>
-    <div class="jumbotron" style="margin-top: 30px;">
+    <!--<div class="jumbotron" style="margin-top: 30px;">-->
+        <!--<img src="style/images/muzeu_de_arta_timisoara.jpg" alt="MArT" class="img-responsive"/>-->
+        <!--<h1>Muzeul de artă Timișoara</h1>-->
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque blanditiis dolorem ducimus, esse ex libero molestiae nemo nobis porro praesentium provident ratione reprehenderit, saepe vitae voluptas. Cumque, officia!</p>-->
+        <!--<p><a class="btn btn-primary btn-lg" href="" role="button">Learn more</a></p>-->
+    <!--</div>-->
+
+    <div>
         <img src="style/images/muzeu_de_arta_timisoara.jpg" alt="MArT" class="img-responsive"/>
-        <h1>Muzeul de artă Timișoara</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam atque blanditiis dolorem ducimus, esse ex libero molestiae nemo nobis porro praesentium provident ratione reprehenderit, saepe vitae voluptas. Cumque, officia!</p>
-        <p><a class="btn btn-primary btn-lg" href="" role="button">Learn more</a></p>
     </div>
 
     <div class="pull-right">
@@ -16,7 +20,7 @@
     <div class="row">
         <div class="col-xs-6 col-md-4" ng-repeat="art in artwork | filter:query">
             <a href="#/artwork/{{ art.id }}" class="thumbnail">
-                <img src="style/images/artwork/default.jpg" alt="artwork">
+                <img src="style/images/artwork/thumb/{{ art.id }}.JPG" alt="thumb" onError="this.src='style/images/artwork/thumb/default.jpg'">
                 <div class="caption">
                     <h3>{{ art.name }}</h3>
                     <p>{{ art.author }}</p>
