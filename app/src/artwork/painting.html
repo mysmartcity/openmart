@@ -1,15 +1,22 @@
 
+<navbar></navbar>
+
 <div>
-    <div class="jumbotron text-center">
-        <img src="style/images/artwork/full/{{artwork.id}}.JPG" alt="style/images/artwork/full/default.jpg"/>
+    <img src="style/images/Design-03.png" alt="icon" class="icon1"/>
+    <h1 class="title">{{ artwork.name }}</h1>
+</div>
+
+
+<div>
+    <div class="artwork-picture text-center">
+        <img src="style/images/artwork/full/{{artwork.id}}.JPG" onError="this.src='style/images/artwork/full/default.png'" class="img-responsive"/>
     </div>
-    <div>
-        <h3>{{ artwork.name }}</h3>
-        <p class="text-muted">{{ artwork.author }}</p>
-        <p>{{ artwork.details }}</p>
-        <p>{{ artwork.size }}</p>
-        <p>{{ artwork.technique }}</p>
-        <p>{{ artwork.description }}</p>
+    <div style="margin: 30px 0 50px 0;">
+        <p class="artwork-text1"><b>{{ artwork.author }}</b><br/>
+            {{ artwork.details }}<br/>
+        <span class="text-muted">{{ artwork.technique }}{{ artwork.size }}</span></p>
+        <p class="artwork-description">{{ artwork.description }}
+        <span ng-hide="artwork.description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores commodi consequatur culpa delectus dicta, dolores error expedita id laboriosam modi nulla odit officiis quasi quia similique vel vitae voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet deserunt, eaque, facere iusto labore maiores nostrum officia omnis possimus quaerat quas quia quo reiciendis sapiente sit totam vel vero.</span></p>
     </div>
 
     <div id="disqus_thread"></div>

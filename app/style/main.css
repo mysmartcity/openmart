@@ -1,11 +1,22 @@
 
 .footer {
-    margin: 20px;
+    /*margin: 20px;*/
     text-align: center;
+    background-color: #111;
+    color: #eee;
+    padding: 45px 0 45px 0;
+    margin-top: 100px;
+}
+.footer a{
+    color:#fcd27d
 }
 
 .thumbnail {
     height: 420px;
+    border: none
+}
+a:hover.thumbnail  {
+    text-decoration: none;
 }
 
 .header1 {
@@ -14,8 +25,8 @@
 }
 .navbar {
     position: absolute;
-    right: 90px;
-    top: 115px;
+    right: 10%;
+    top: 40%;
 }
 .navbar li {
     list-style: none;
@@ -24,15 +35,24 @@
     margin: 20px;
     font-family: 'Oxygen', sans-serif;
 }
+.navbar li .active {
+    border-bottom: 4px solid #fcd27d;
+}
+
 .navbar a {
     color: black;
 }
+.navbar a:hover {
+    text-decoration: none;
+}
 
 .title {
-    font-family: 'Courgette', cursive;
+    font-family: 'Noto Serif', cursive;
     display: inline;
     position: relative;
     top: 15px;
+    letter-spacing: 2px;
+    font-size: 40px;
 }
 
 .icon1 {
@@ -40,25 +60,56 @@
     width: 75px;
 }
 
+.artwork-description {
+    text-align: justify;
+}
+
+.artwork-picture {
+    width: 100%;
+    margin: 50px 0 0 0;
+    padding-left: 70px;
+}
+
+.artwork-text1 {
+    margin: 0 0 50px 70px;
+    font-size: 20px;
+}
+
+.searchbox {
+    margin-top: -20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.searchbox input {
+    width: 39%;
+    background-color: #1a1a1a;
+    height: 45px;
+    color: #fcd27d;
+    font-size: 20px;
+    text-align: center;
+}
+
+
 .google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
-    }
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
 
 .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .contact-text {
-	font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .grey-font {
-	color: grey;
+    color: grey;
 }
